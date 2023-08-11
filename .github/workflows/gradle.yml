@@ -36,3 +36,6 @@ jobs:
       with:
         gradle-version: 7.5.1
         arguments: build
+            # Docker 이미지 Build (2)
+    - name: docker image build
+      run: docker build -t mycafe/boot-prac-ci .
